@@ -1,3 +1,5 @@
 //The following macro creates secret buttons, visible only to you, in the game chat for each of the Ability Checks of the selected creature. You can then press a button to roll the respective check.
 
 /w @{character_name}  &{template:default} {{name=**Ability Checks**}} {{[Strength](~selected|Strength)=[**Dexterity**](~selected|Dexterity)}} {{[Constitution](~selected|Constitution)=[**Intelligence**](~selected|intelligence)}} {{[Wisdom](~selected|wisdom)=[**Charisma**](~selected|charisma)}}
+
+Made by: Koda, small reformatting by Batdaf
