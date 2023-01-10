@@ -1,0 +1,5 @@
+//The following macro creates secret buttons, visible only to you, in the game chat for each of the Saving Throws of the selected creature. You can then press a button to roll the respective save.
+
+/w @{character_name}  &{template:default} {{name=**Saving Throws**}} {{[Strength](~selected|Strength_save)=[**Dexterity**](~selected|Dexterity_save)}} {{[Constitution](~selected|Constitution_save)=[**Intelligence**](~selected|intelligence_save)}} {{[Wisdom](~selected|wisdom_save)=[**Charisma**](~selected|charisma_save)}}
+
+Made by: Koda, small reformatting by Batdaf
