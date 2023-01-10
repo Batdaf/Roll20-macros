@@ -1,0 +1,13 @@
+//The following are several different versions of an initiative macro, each of which will query a different number of bonuses.
+
+//Only the character's initiative bonus
+@{wtype}&{template:simple} {{rname=^{init-u}}} {{mod=@{initiative_bonus}}} {{r1=[[@{initiative_style}+@{initiative_bonus}@{pbd_safe}[INIT] &{tracker}]]}} {{normal=1}} @{charname_output}
+
+//Character's initiative bonus and gift of alacrity if you choose yes on the query
+@{wtype}&{template:simple} {{rname=^{init-u}}} {{mod=@{initiative_bonus}}} {{r1=[[@{initiative_style}+@{initiative_bonus}@{pbd_safe}[INIT] + ?{Alacrity?|No,0|Yes,1d8cf0cs0}[ALACRITY] &{tracker}]]}} {{normal=1}} @{charname_output}
+
+//Character's initiative bonus, gift of alacrity and emboldening bond if you choose yes on the queries
+@{wtype}&{template:simple} {{rname=^{init-u}}} {{mod=@{initiative_bonus}}} {{r1=[[@{initiative_style}+@{initiative_bonus}@{pbd_safe}[INIT] + ?{Alacrity?|No,0|Yes,1d8cf0cs0}[ALACRITY] +?{Bond?|No,0|Yes,1d4cf0cs0}[BOND]  &{tracker}]]}} {{normal=1}} @{charname_output}
+
+//Character's initiative bonus, gift of alacrity, emboldening bond and guidance if you choose yes on the queries
+@{wtype}&{template:simple} {{rname=^{init-u}}} {{mod=@{initiative_bonus}}} {{r1=[[@{initiative_style}+@{initiative_bonus}@{pbd_safe}[INIT] + ?{Alacrity?|No,0|Yes,1d8cf0cs0}[ALACRITY] +?{Bond?|No,0|Yes,1d4cf0cs0}[BOND] +?{Guidance?|No,0|Yes,1d4cf0cs0}[GUIDANCE] &{tracker}]]}} {{normal=1}} @{charname_output}
