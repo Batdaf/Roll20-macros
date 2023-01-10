@@ -13,7 +13,6 @@
 @{wtype}&{template:simple} {{rname=^{init-u}}} {{mod=@{initiative_bonus}}} {{r1=[[@{initiative_style}+@{initiative_bonus}@{pbd_safe}[INIT] + ?{Alacrity?|No,0|Yes,1d8cf0cs0}[ALACRITY] +?{Bond?|No,0|Yes,1d4cf0cs0}[BOND] +?{Guidance?|No,0|Yes,1d4cf0cs0}[GUIDANCE] &{tracker}]]}} {{normal=1}} @{charname_output}
 
 
-If you often forget to select your token and wish to make sure the macro only runs if you have a token selected then use the keyword "selected":
-copy the desired macro and then replace "r1=[[@{initiative_style}" with "r1=[[@{selected|initiative_style}".
+//If you often forget to select your token and wish to make sure the macro only runs if you have a token selected then use the keyword "selected": copy the desired macro and then replace "r1=[[@{initiative_style}" with "r1=[[@{selected|initiative_style}".
 
 Made by: Publius2
