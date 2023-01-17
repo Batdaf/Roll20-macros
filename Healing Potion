@@ -1,0 +1,22 @@
+//The following macro will ask you(query) the type of healing potion you want to drink and roll the respective dice. It includes a cute gif as well
+
+&{template:default} {{name=Healing Potion}} {{
+ ?{Potion|
+ Regular, **Healing Potion Used:** [[2d4+2]]|
+ Greater, **Greater Healing Potion Used:** [[4d4+4]]|
+ Superior, **Superior Healing Potion Used:** [[8d4+8]]|
+ Supreme, **Supreme Healing Potion Used:** [[10d4+20]]
+ } 
+ HP recovered 
+[drink](https://i.imgur.com/UeAr65H.gif)}}
+
+//If you want to do away with the gif use the following version
+
+&{template:default} {{name=Healing Potion}} {{
+ ?{Potion|
+ Regular, **Healing Potion Used:** [[2d4+2]]|
+ Greater, **Greater Healing Potion Used:** [[4d4+4]]|
+ Superior, **Superior Healing Potion Used:** [[8d4+8]]|
+ Supreme, **Supreme Healing Potion Used:** [[10d4+20]]
+ } 
+ HP recovered}}
