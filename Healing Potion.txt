@@ -69,3 +69,6 @@
  Supreme, **Supreme Healing Potion Used:** [[(?{Number of potions used?&#125;*10)d4+?{Number of potions used?&#125;*20]]
  } 
  HP recovered}}
+
+Made by: SilbersM
+Modifications by: Snow, Publius2 and Batdaf
