@@ -1,0 +1,29 @@
+/* Each of the following macros makes 10 rolls with a bonus provided by you when you activate it. Where the macros differ is in the state of advantage. To keep it simple
+you can make all 3 separate macros and make token actions for each. However, the best usage here is to make a single menu macro that allows you to pick which one of the 
+versions below you want with the click of a button. This however requires an extra step and will be available in the medium complexity brancg of this repository.
+
+/* THE FOLLOWING MACRO MAKES 10 ROLLS AT ADVANTAGE. IT ASKS YOU FOR THE BONUS BEFORE ROLLING. */
+
+&{template:npcaction} {{name=Advantage}} {{rname=Attacks/Saves}} {{description=
+[[(2d20kh1+?{Bonus to Roll})]] [[(2d20kh1+?{Bonus to Roll})]] [[(2d20kh1+?{Bonus to Roll})]] [[(2d20kh1+?{Bonus to Roll})]] [[(2d20kh1+?{Bonus to Roll})]] 
+----------------------------------
+[[(2d20kh1+?{Bonus to Roll})]] [[(2d20kh1+?{Bonus to Roll})]] [[(2d20kh1+?{Bonus to Roll})]] [[(2d20kh1+?{Bonus to Roll})]] [[(2d20kh1+?{Bonus to Roll})]] }}
+
+
+/* THE FOLLOWING MACRO MAKES 10 ROLLS AT NORMAL. IT ASKS YOU FOR THE BONUS BEFORE ROLLING. */
+
+&{template:npcaction} {{name=Normal}} {{rname=Attacks/Saves}} {{description=
+[[(d20+?{Bonus to Roll})]] [[(d20+?{Bonus to Roll})]] [[(d20+?{Bonus to Roll})]] [[(d20+?{Bonus to Roll})]] [[(d20+?{Bonus to Roll})]] 
+----------------------------------
+[[(d20+?{Bonus to Roll})]] [[(d20+?{Bonus to Roll})]] [[(d20+?{Bonus to Roll})]] [[(d20+?{Bonus to Roll})]] [[(d20+?{Bonus to Roll})]] }}
+
+
+/* THE FOLLOWING MACRO MAKES 10 ROLLS AT DISADVANTAGE. IT ASKS YOU FOR THE BONUS BEFORE ROLLING. */
+
+&{template:npcaction} {{name=Disadvantage}} {{rname=Attacks/Saves}} {{description=
+[[(2d20kl1+?{Bonus to Roll})]] [[(2d20kl1+?{Bonus to Roll})]] [[(2d20kl1+?{Bonus to Roll})]] [[(2d20kl1+?{Bonus to Roll})]] [[(2d20kl1+?{Bonus to Roll})]] 
+----------------------------------
+[[(2d20kl1+?{Bonus to Roll})]] [[(2d20kl1+?{Bonus to Roll})]] [[(2d20kl1+?{Bonus to Roll})]] [[(2d20kl1+?{Bonus to Roll})]] [[(2d20kl1+?{Bonus to Roll})]] }}
+
+Made by: Lean Shake
+Modified by: Batdaf
