@@ -1,5 +1,0 @@
-//The following is a macro that quickly and easily applies the Healer feat healing to any character or npc. All you have to do is run the macro and click on the token of the creature you wish to heal.
-
-&{template:npcaction} {{name=Healer Kit}} {{rname=Healer Feat}} {{description=@{selected|character_name} heals @{target|Guy|token_name} for [[1d6 + 4 + [[[[@{target|Guy|npc}*{@{target|Guy|npc_hpformula}}>1]]+[[abs([[@{target|Guy|npc}-1]])*@{target|Guy|hit_dice|max})]]]]]]}}
-
-Made by: Publius2 and Batdaf
