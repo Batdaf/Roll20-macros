@@ -1,0 +1,7 @@
+regular smite
+&{template:dmg} {{rname=Level ?{What Spell Level?|1|2|3|4|5} Smite}} {{damage=1}} {{dmg1flag=1}} {{dmg1=[[[[1+?{What Spell Level?}-floor(?{What Spell Level?}/5)]]d8]]}} {{dmg1type=Radiant}} {{dmg2flag=1}} {{dmg2=[[1d8]]}} {{dmg2type=vs undead/fiend}}
+
+critical smite
+&{template:dmg} {{rname=Level ?{What Spell Level?|1|2|3|4|5} Smite}} {{damage=1}} {{dmg1flag=1}} {{dmg1=[[[[(1+?{What Spell Level?}-floor(?{What Spell Level?}/5))]]d8]]}} {{dmg1type=Radiant}} {{dmg2flag=1}} {{dmg2=[[1d8]]}} {{dmg2type=vs undead/fiend}} {{crit=1}} {{crit1=[[[[(1+?{What Spell Level?}-floor(?{What Spell Level?}/5))]]d8]]}} {{crit2=[[1d8]]}}
+
+Made: PubliusII
